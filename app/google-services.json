@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "705194211013",
+    "firebase_url": "https://businic-aeaea.firebaseio.com",
+    "project_id": "businic-aeaea",
+    "storage_bucket": "businic-aeaea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705194211013:android:8a3c1a67ff8d1e99",
+        "android_client_info": {
+          "package_name": "com.hackathon2018.carazoinnova.bisnic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705194211013-l7bvnce0ein8sbl0e8l3dvfku85j7i73.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackathon2018.carazoinnova.bisnic",
+            "certificate_hash": "4ee9b3e0f8cffba6c2e2c6594900f6c08690dda1"
+          }
+        },
+        {
+          "client_id": "705194211013-p7hdb7pe9i675am8v8dvaircs043h72c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8xq1boncQmSEmkGKpPX55MF48m8cEUlI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705194211013-p7hdb7pe9i675am8v8dvaircs043h72c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

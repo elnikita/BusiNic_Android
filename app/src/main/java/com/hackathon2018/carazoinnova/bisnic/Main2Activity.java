@@ -1,5 +1,7 @@
 package com.hackathon2018.carazoinnova.bisnic;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -18,6 +20,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -147,7 +150,16 @@ public class Main2Activity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            FirebaseAuth.getInstance().signOut();
+            LoginManager.getInstance().logOut();
+
+
+            Intent Main_screen = new Intent ( Main2Activity.this, MainActivity.class);
+            startActivity(Main_screen);
+            ((Activity)Main2Activity.this).finish();
             return true;
+
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -157,11 +169,17 @@ public class Main2Activity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
+
+        }
+
+
+        return super.onOptionsItemSelected(item);
+}
+
 }
